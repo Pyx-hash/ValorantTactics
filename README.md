@@ -76,20 +76,7 @@ Then deploy the contents of the dist/ (or build/) folder to your static host (Gi
 - Adding or Editing Tactics
 
 
-### Project Structure
-ValorantTactics/
-├── docs/                 # Hostable static site folder (used by GitHub Pages)
-│   ├── index.html
-│   ├── maps/              # Map images + layout data
-│   ├── tactics/           # Stored tactic‐files (JSON or similar)
-│   └── assets/            # CSS / JS / images
-├── src/                  # (Optional) Source files if using build tooling
-│   ├── components/
-│   ├── styles/
-│   └── main.js
-├── .gitignore
-├── package.json
-└── README.md
+### Project Structures
 
 Feel free to adapt this structure depending on actual implementations.
 
