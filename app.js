@@ -69,7 +69,7 @@
             "Use utility to deny Market rotations.",
             "Default plant in the open for post-plant utility."
         ], 
-        image: "img/maps/ascent.webp" 
+        image: "img/maps/Ascent.webp" 
     },
     { 
         name: "Bind", 
@@ -560,4 +560,5 @@
         });
 
         // Initialize on load
+
         window.addEventListener('load', initApp);
