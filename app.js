@@ -562,3 +562,4 @@
         // Initialize on load
 
         window.addEventListener('load', initApp);
+
