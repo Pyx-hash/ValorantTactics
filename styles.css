@@ -1,0 +1,90 @@
+@import url('https://fonts.cdnfonts.com/css/valorant');
+:root {
+    --valorant-red: #ff4655;
+    --dark-gray: #0b0c10;
+    --charcoal: #1a1e22;
+    --light-gray: #fcfcfc;
+}
+body {
+    font-family: "VALORANT", sans-serif;
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)), url("https://placehold.co/1920x1080/0b0c10/1a1e22?text=VALORANT+TACTICS+BACKGROUND");
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+.valorant-red-accent {
+    color: var(--valorant-red);
+}
+.valorant-bg-accent {
+    background-color: var(--valorant-red);
+}
+.valorant-border{
+    border-bottom: 2px solid var(--valorant-red);
+}
+.valorant-interactive {
+    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.valorant-interactive:hover {
+    color: var(--dark-gray);
+    background-color: var(--valorant-red);
+    box-shadow: 0 0 20px rgba(255, 70, 85, 0.6);
+    transform: scale(1.01);
+}
+.agent-nav-item {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid transparent;
+    color: #ccc;
+}
+.agent-nav-item:hover {
+    color: var(--valorant-red);
+    border-color: var(--valorant-red);
+}
+.agent-nav-item.active {
+    color: var(--light-gray);
+    background-color: rgba(255, 70, 85, 0.2);
+    border-color: var(--valorant-red);
+    transform: scale(1.02);
+}
+.skill-icon-wrapper {
+    background-color: rgba(255, 70, 85, 0.1);
+    border: 1px solid rgba(255, 70, 85, 0.4);
+    transition: transform 0.3s ease;
+}
+.skill-card:hover .skill-icon-wrapper {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 70, 85, 0.2);
+}
+.fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--valorant-red);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #111;
+}
